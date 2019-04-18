@@ -31,6 +31,7 @@ public class AuthorController {
     /**
      * A Constructor to build the basic controller and load data
      */
+    //Step 7
     public AuthorController() {
         // TODO: Refresh the List of Authors from the Database
         refreshFromDB();
@@ -39,6 +40,7 @@ public class AuthorController {
     /**
      * A method for refreshing the list of Authors from the Database
      */
+    //Step 8
     private void refreshFromDB() {
         // TODO: Refresh the List of Authors from the Database
         try {
@@ -100,6 +102,7 @@ public class AuthorController {
      * @param id the ID of the Author
      * @return was the database change successful
      */
+    //Step 9
     private boolean removeFromDB(int id) {
         // TODO: Remove the identified Author from the Database
         try {
@@ -136,6 +139,7 @@ public class AuthorController {
      * @param id the Author's ID
      * @return the Author object
      */
+    //Step 10
     public Author getById(int id) {
         // TODO: Retrieve an Author object from the list based on the ID
         for (Author a : authors) {
@@ -151,6 +155,7 @@ public class AuthorController {
      * @param json the JSON object of an Author
      * @return the JSON object of the author with its new ID
      */
+    //Step 11
     public JsonObject add(JsonObject json) {
         // TODO: Add the Author to the List of Authors AND the Database
         Author a = new Author(json);
@@ -186,6 +191,7 @@ public class AuthorController {
      * @param id the ID of the existing Author
      * @return whether or not the removal was successful
      */
+    //Step 12
     public boolean delete(int id) {
         // TODO: Remove the Author from the database and the list, and report on success
         Author a = getById(id);

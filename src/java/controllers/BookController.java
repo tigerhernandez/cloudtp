@@ -66,6 +66,7 @@ public class BookController {
      * @param b the Book object
      * @return was the database change successful
      */
+    //Step 13
     private boolean persistToDB(Book b) {
         /* TODO:
          *  - Determine if the change is an INSERT or an UPDATE by checking the ID
@@ -109,6 +110,7 @@ public class BookController {
      * @param id the ID of the Book
      * @return was the database change successful
      */
+    //Step 14
     private boolean removeFromDB(int id) {
         // TODO: Remove the identified Book from the Database
         try {
@@ -131,6 +133,7 @@ public class BookController {
      *
      * @return the JSON array of all Books
      */
+    //Step 15
     public JsonArray getAll() {
         // TODO: Create a JSON Array that contains all of the books
         JsonArrayBuilder arr = Json.createArrayBuilder();
@@ -146,6 +149,7 @@ public class BookController {
      * @param id the Book's ID
      * @return the Book object
      */
+    //Step 16
     public Book getById(int id) {
         // TODO: Retrieve a Book object from the list based on the ID
         for (Book b : books) {
@@ -194,6 +198,7 @@ public class BookController {
      * @param id the ID of the existing Book
      * @return whether or not the removal was successful
      */
+    //Step 17
     public boolean delete(int id) {
         // TODO: Remove the Book from the database and the list, and report on success
         Book b = getById(id);
